@@ -19,5 +19,12 @@
     <% if (msg) {%>
     <h3>Isso e uma mensagem de erro!</h3>
     <% }%>
+    <hr />
+    <!-- fazendo foreach no html com ejs-->
+    <% produtos.forEach( (produto) => { %>
+    <h4><%= produto.nome %></h4>
+    <h5><%= produto.preco %></h5>
+    <hr />
+    <% }) %>
   </body>
 </html>

@@ -11,12 +11,21 @@ app.get("/:nome/:lang", (req, res) => {
   var nome = req.params.nome;
   var lang = req.params.lang;
   var exibirMsg = true;
+  var produtos = [
+    { nome: "Doritos", preco: 3.14 },
+    { nome: "Coca-Cola", preco: 5.0 },
+    { nome: "Leite", preco: 1.45 },
+    { nome: "Cerveja", preco: 4.0 },
+    { nome: "Carne", preco: 45.0 },
+  ];
+
   res.render("index", {
     nome: nome,
     lang: lang,
     empresa: "Guia do programador",
     inscritos: 10000,
     msg: exibirMsg,
+    produtos: produtos,
   });
 });
 
