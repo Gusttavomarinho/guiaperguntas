@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Perguntas</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guia Perguntas</title>
-</head>
-
-<body>
-  <h1>Guia Perguntas!</h1>
-  <hr>
-  <p>Nome:<%= nome %>
-  </p>
-  <p>Linguagem Favorita:<%= lang %>
-  </p>
-  <p>Eempresa: <%= empresa %>
-  </p>
-  <p>Inscritos: <%= inscritos %>
-  </p>
-  <!-- <%=  %> serve para exibir varaiveis js no codigo html com ejs-->
-</body>
-
+  <body>
+    <h1>Guia Perguntas!</h1>
+    <hr />
+    <p>Nome:<%= nome %></p>
+    <p>Linguagem Favorita:<%= lang %></p>
+    <p>Eempresa: <%= empresa %></p>
+    <p>Inscritos: <%= inscritos %></p>
+    <!-- <%=  %> serve para exibir varaiveis js no codigo html com ejs-->
+    <% if (msg) {%>
+    <h3>Isso e uma mensagem de erro!</h3>
+    <% }%>
+  </body>
 </html>
