@@ -7,9 +7,9 @@ app.set('view engine', 'ejs');
 
 //rotas
 
-app.get("/", (req, res) => {
-  var nome = "Gustavo Marinho";
-  var lang = "JavaScript";
+app.get("/:nome/:lang", (req, res) => {
+  var nome = req.params.nome
+  var lang = req.params.lang
   res.render("index", {
     nome: nome,
     lang: lang,
