@@ -8,26 +8,5 @@
     <title>Guia Perguntas</title>
   </head>
 
-  <body>
-    <h1>Guia Perguntas!</h1>
-    <hr />
-    <p>Nome:<%= nome %></p>
-    <p>Linguagem Favorita:<%= lang %></p>
-    <p>Eempresa: <%= empresa %></p>
-    <p>Inscritos: <%= inscritos %></p>
-    <!-- <%=  %> serve para exibir varaiveis js no codigo html com ejs-->
-
-    <% if (msg) {%>
-    <h3>Isso e uma mensagem de erro!</h3>
-    <% }%>
-    <hr />
-    <!-- fazendo foreach no html com ejs-->
-    <% produtos.forEach( (produto) => { %>
-    <h4><%= produto.nome %></h4>
-    <h5><%= produto.preco %></h5>
-    <hr />
-    <% }) %>
-    <hr />
-    <img src="/img/nodejs.png" />
-  </body>
+  <body></body>
 </html>
