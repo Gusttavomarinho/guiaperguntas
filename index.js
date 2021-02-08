@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 //set { usando o EJS como engine}
 app.set("view engine", "ejs");
+app.use(express.static("public")); //definindo a pasta de arquivos estatico
 
 //rotas
 
