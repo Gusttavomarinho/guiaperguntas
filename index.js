@@ -33,3 +33,5 @@ app.post("/salvarpergunta", (req, res) => {
 app.listen(4000, () => {
   console.log("App rodando");
 });
+
+//acredito que na nova versao do express nao precise mais do body-parser vou tirar duvida depois
