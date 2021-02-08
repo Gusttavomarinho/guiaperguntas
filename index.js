@@ -8,7 +8,14 @@ app.set('view engine', 'ejs');
 //rotas
 
 app.get("/", (req, res) => {
-  res.send("Bem vindo ao meu site!");
+  var nome = "Gustavo Marinho";
+  var lang = "JavaScript";
+  res.render("index", {
+    nome: nome,
+    lang: lang,
+    empresa: "Guia do programador",
+    inscritos: 8000
+  });
 });
 
 //criando o server da aplicação
