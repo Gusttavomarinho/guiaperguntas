@@ -1,6 +1,18 @@
 //importações
 const express = require("express");
 const bodyParser = require("body-parser");
+const connection = require("./database/database");
+
+//database
+connection
+  .authenticate()
+  .then(() => {
+    console.log("Conexao feita com o banco de dados");
+  })
+  .catch((msgErro) => {
+    console.log(msgErro);
+  });
+
 //instanciando
 const app = express();
 //set { usando o EJS como engine}
